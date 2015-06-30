@@ -35,4 +35,9 @@ if(process.env.ENABLE_S3HTMLCACHE === 'true'){
     server.use(prerender.s3HtmlCache());
 }
 
+if(process.env.ENABLE_MEMJSHTMLCACHE === 'true'){
+    server.use(require('prerender-memjs-cache'));
+}
+
 server.start();
+
