@@ -2,6 +2,20 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 4.0.7 - 2016-03-22
+### Changed
+- S3 cache plugin was incorrectly saving non-200 status code responses to the cache
+
+## 4.0.6 - 2016-03-09
+### Changed
+- preserve phantom arguments when server is restarting
+- use default when phantomArguments is empty
+
+## 4.0.5 - 2016-02-29
+### Changed
+- prevent multiple phantomjs instances from being started with low number of iterations
+- try to check to see if phantomjs has actually been disposed. if not, force kill it.
+
 ## 4.0.4 - 2016-02-18
 ### Changed
 - added engines to package.json and fixed possible bug in checking options passed in
