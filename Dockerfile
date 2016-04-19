@@ -1,4 +1,4 @@
-FROM iojs:onbuild
+FROM node:onbuild
 ENV HOME /home/user
 RUN useradd --create-home --home-dir $HOME user \
     && chown -R user:user /usr/src/app && bunzip2 /usr/src/app/phantomjs2.bz2 && chmod 755 /usr/src/app/phantomjs2
